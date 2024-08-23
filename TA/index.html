@@ -6,12 +6,11 @@
     <title>Document</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
 </head>
 <body>
     <div class="container mt-5">
         <h2>Formulario</h2> <br>
-        <form>
+        <form id="formulario">
             <div class="form-group">
                 <input type="text" class="form-control" id="cedula" placeholder="Ingrese su cédula">
             </div>
@@ -24,11 +23,10 @@
             <div class="form-group">
                 <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo">
             </div>
-            <button type="submit" class="btn btn-outline-primary"> <i class="bi bi-patch-plus-fill"></i>
-                Guardar</button>
+            <button type="submit" class="btn btn-outline-primary"> <i class="bi bi-patch-plus-fill"></i> Guardar</button>
         </form>
 
-        <h2 class="mt-5"></h2>
+        <h2 class="mt-5">Tabla</h2>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -39,47 +37,8 @@
                     <th>OPCIONES</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>2350979130</td>
-                    <td>Anthony</td>
-                    <td>22</td>
-                    <td>buriii2018@gmail.com</td>
-                    <td>
-                        <button class="btn btn-outline-info"> <i class="bi bi-pencil-square"></i>  Editar</button>
-                        <button class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i> Eliminar </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2350449712</td>
-                    <td>Melany</td>
-                    <td>22</td>
-                    <td>melany@gmail.com</td>
-                    <td>
-                        <button class="btn btn-outline-info"> <i class="bi bi-pencil-square"></i>  Editar</button>
-                        <button class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i> Eliminar </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2263547895</td>
-                    <td>Don Pagua Yaku</td>
-                    <td>21</td>
-                    <td>todoyaku@gmail.com</td>
-                    <td>
-                        <button class="btn btn-outline-info"> <i class="bi bi-pencil-square"></i>  Editar</button>
-                        <button class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i> Eliminar </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>0803445378</td>
-                    <td>Yuly Mishelle</td>
-                    <td>22</td>
-                    <td>yulycarvajal1234@gmail.com</td>
-                    <td>
-                        <button class="btn btn-outline-info"> <i class="bi bi-pencil-square"></i>  Editar</button>
-                        <button class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i> Eliminar </button>
-                    </td>
-                </tr>
+            <tbody id="tabla-usuarios">
+                <!-- Aquí se insertarán los datos -->
             </tbody>
         </table>
     </div>
@@ -87,5 +46,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
