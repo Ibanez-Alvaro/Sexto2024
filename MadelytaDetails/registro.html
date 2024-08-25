@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilo_registro.css">
+    <script src="javascripregistro.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h2>Registro</h2> <br>
+        <form action="registro.php" method="post">
+            <div class="input-contenedor">
+                <i class="fa-solid fa-user"></i>
+                <input id="nombreUsuario" name="nombreUsuario" type="text" required>
+                <label for="nombreUsuario">Nombre de Usuario</label>
+            </div><br>
+            <div class="input-contenedor">
+                <i class="fa-solid fa-calendar"></i>
+                <input id="edad" name="edad" type="number" required>
+                <label for="edad">Edad</label>
+            </div> <br>
+            <div class="input-contenedor">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="correo" name="correo" type="email" required>
+                <label for="correo">Correo Electrónico</label>
+            </div> <br>
+            <div class="input-contenedor">
+                <i class="fa-solid fa-lock"></i>
+                <input id="contraseña" name="contraseña" type="password" required>
+                <label for="contraseña">Contraseña</label>
+            </div> <br>
+            <div class="input-contenedor">
+                <i class="fa-solid fa-lock"></i>
+                <input id="confirmarContraseña" name="confirmarContraseña" type="password" required>
+                <label for="confirmarContraseña">Confirmar Contraseña</label>
+            </div>
+            <div class="button-container">
+                <button id="botonRegistrar" type="submit">Registrarse</button>
+            </div>
+            <div class="registrar">
+                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
