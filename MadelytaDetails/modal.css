@@ -1,0 +1,13 @@
+.modal-content {
+    background-color: #2e75b4; /* Cambia este color según tus preferencias */
+    border-radius: 10px;
+}
+.modal-header {
+    background-color: #4682b4; /* Cambia este color según tus preferencias */
+    color: white;
+}
+.modal-footer {
+    background-color: #4682b4; /* Cambia este color según tus preferencias */
+}
+
+

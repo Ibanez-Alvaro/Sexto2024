@@ -2,10 +2,10 @@
 // Incluir el archivo de conexión
 include 'conexion.php';
 
-// Obtener datos del formulario
-$nombreUsuario = $_POST['nombreUsuario'];
-$edad = $_POST['edad'];
-$correo = $_POST['correo'];
+// Obtener datos del formulario y sanitizarlos
+$nombreUsuario = htmlspecialchars($_POST['nombreUsuario']);
+$edad = (int)$_POST['edad'];
+$correo = filter_var($_POST['correo'], FILTER_SANITIZE_EMAIL);
 $contraseña = $_POST['contraseña'];
 $confirmarContraseña = $_POST['confirmarContraseña'];
 
@@ -45,3 +45,4 @@ if ($result->num_rows > 0) {
 $stmt->close();
 $conn->close();
 ?>
+
