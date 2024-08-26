@@ -62,4 +62,3 @@ function editarUsuario(index) {
 }
 
 document.addEventListener('DOMContentLoaded', mostrarUsuarios);
-
