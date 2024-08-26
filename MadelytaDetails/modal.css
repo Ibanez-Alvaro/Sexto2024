@@ -11,3 +11,56 @@
 }
 
 
+
+.contenedor-superior{
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 99%;
+    min-height: 80px;
+    backdrop-filter: blur(15px);
+    border: 2px solid #b1ffff;
+    background-size: cover;   
+}
+.contenedor-bienvenida{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(montaña.jpg) no-repeat;
+    background-size: cover;   
+}
+#bienvenida{
+    
+    position: fixed;
+    justify-content: right;
+    right: 40%;
+    color: white;
+    border: none;
+}
+
+#cerrar-sesion {
+    position: fixed;
+    right: 30px;
+    padding: 8px 15px;
+    background-color: #f44336; /* Cambia este color al que prefieras */
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#cerrar-sesion:hover {
+    background-color: #d32f2f; /* Cambia este color al que prefieras */
+}
+.texto{
+    padding: 5%;
+    color: aliceblue;
+    backdrop-filter: blur(15px);
+    border: none;
+}
+
+

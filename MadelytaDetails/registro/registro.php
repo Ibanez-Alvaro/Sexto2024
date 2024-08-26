@@ -1,6 +1,6 @@
 <?php
 // Incluir el archivo de conexión
-include 'conexion.php';
+include '../conexion.php';
 
 // Obtener datos del formulario y sanitizarlos
 $nombreUsuario = htmlspecialchars($_POST['nombreUsuario']);
