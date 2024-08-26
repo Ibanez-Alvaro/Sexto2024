@@ -6,7 +6,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     let edad = document.getElementById('edad').value;
     let correo = document.getElementById('correo').value;
 
-    if (cedula && nombres && edad && correo) {
+    if (cedula.length <= 10 && edad.length <= 2 && cedula && nombres && edad && correo) {
         let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
         usuarios.push({ cedula, nombres, edad, correo });
@@ -18,7 +18,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         // Limpiar el formulario
         document.getElementById('formulario').reset();
     } else {
-        alert("Por favor, complete todos los campos.");
+        alert("Por favor, complete todos los campos correctamente.");
     }
 });
 
@@ -62,3 +62,4 @@ function editarUsuario(index) {
 }
 
 document.addEventListener('DOMContentLoaded', mostrarUsuarios);
+
